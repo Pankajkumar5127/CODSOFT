@@ -1,0 +1,86 @@
+/* ===== BASIC RESET ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: linear-gradient(135deg, #cce4ff, #0078ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== CALCULATOR BOX ===== */
+.calculator {
+  background: #2196f3;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  width: 300px;
+}
+
+/* ===== DISPLAY ===== */
+#display {
+  width: 100%;
+  height: 66px;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px 14px;
+  background: #eaf3ff;
+  color: #000;
+}
+
+/* ===== BUTTONS GRID ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* wide button spans two columns */
+button.wide {
+  grid-column: span 2;
+}
+
+/* ===== BUTTONS STYLE ===== */
+button {
+  padding: 16px;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 12px;
+  background: #0d6efd;
+  color: white;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.12);
+  user-select: none;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
+
+button[data-action="op"] {
+  background: #1565c0;
+}
+
+button[data-action="eval"] {
+  background: #0b79d6;
+}
+
+button[data-action="clear"] {
+  background: #ff5c5c;
+}
+
+button[data-action="back"] {
+  background: #ff9f43;
+}
+
+/* accessibility focus */
+button:focus {
+  outline: 3px solid rgba(255,255,255,0.18);
+}

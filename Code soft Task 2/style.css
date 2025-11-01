@@ -1,0 +1,146 @@
+:root {
+  --blue: #0078ff;
+  --light-blue: #e8f1ff;
+  --white: #ffffff;
+  --dark: #0b1736;
+  --gray: #6b7280;
+  --radius: 10px;
+}
+
+/* ===== RESET ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light-blue);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: var(--white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.logo {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+.logo span { color: var(--blue); }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover { color: var(--blue); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(to right, var(--blue), #4b9cff);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--white);
+  color: var(--blue);
+  padding: 10px 25px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #004aad;
+  color: var(--white);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 20px;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blue);
+  margin-bottom: 30px;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.service-card h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  background: var(--white);
+  text-align: center;
+}
+.about-content p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  background: var(--blue);
+  color: var(--white);
+}
+.contact p { margin-bottom: 20px; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: var(--white);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.95rem;
+}

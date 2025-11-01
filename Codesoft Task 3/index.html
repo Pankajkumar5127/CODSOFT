@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator | Level 1 Task 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly aria-label="Calculator display" />
+
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button data-action="digit">7</button>
+      <button data-action="digit">8</button>
+      <button data-action="digit">9</button>
+      <button data-action="op">+</button>
+
+      <!-- Row 2 -->
+      <button data-action="digit">4</button>
+      <button data-action="digit">5</button>
+      <button data-action="digit">6</button>
+      <button data-action="op">-</button>
+
+      <!-- Row 3 -->
+      <button data-action="digit">1</button>
+      <button data-action="digit">2</button>
+      <button data-action="digit">3</button>
+      <button data-action="eval">=</button>
+
+      <!-- Row 4 -->
+      <button data-action="digit">0</button>
+      <button data-action="dot">.</button>
+      <button data-action="op">*</button>
+      <button data-action="op">/</button>
+
+      <!-- Row 5 (controls) -->
+      <button data-action="clear" class="wide">C</button>
+      <button data-action="back" class="wide">⌫</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueSky Solutions | Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">BlueSky<span>Solutions</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <h2>Transforming Ideas into Digital Reality</h2>
+      <p>We build modern, responsive, and user-friendly websites that help businesses grow online.</p>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🌐 Web Design</h3>
+          <p>Responsive and engaging website layouts built with modern web standards.</p>
+        </div>
+        <div class="service-card">
+          <h3>☁️ Cloud Solutions</h3>
+          <p>Secure, scalable cloud infrastructure setup to power your business online.</p>
+        </div>
+        <div class="service-card">
+          <h3>📊 Data Analytics</h3>
+          <p>Actionable insights through dashboards and performance metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about">
+    <div class="container about-content">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        BlueSky Solutions is a creative digital agency helping businesses establish their online presence.
+        Our team focuses on simplicity, functionality, and design precision — delivering results that matter.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Ready to start your next project? Let’s talk!</p>
+      <a href="mailto:info@blueskysolutions.com" class="btn-primary">Send Message</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© <span id="year"></span> BlueSky Solutions | Designed by Pankaj Kumar</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

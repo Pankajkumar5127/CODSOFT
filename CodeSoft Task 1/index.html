@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Kumar Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Pankaj Kumar Portfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <img src="IMG_2006.JPG" alt="Pankaj Kumar" class="hero-img" />
+        <div class="hero-text">
+          <h2>I'm <span>Pankaj Kumar</span></h2>
+          <p>Data & Business Analyst | Cloud Systems & Front-End Developer</p>
+          <a href="mailto:kumarpankaj5127@outlook.com" class="btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I’m <strong>Pankaj Kumar</strong>, a tech-driven professional with over <strong>6 years of experience</strong> 
+          in operations, data analytics, and process optimization, currently working as 
+          <strong>Assistant Manager at Genpact</strong>.  
+          I specialize in <strong>Cloud Systems Administration, Data Analytics, and Front-End Development</strong>, 
+          combining analytical and technical skills to drive efficiency and digital transformation.  
+          Certified in <strong>Microsoft Azure Fundamentals (AZ-900)</strong>, I am passionate about 
+          cloud computing, DevOps, and modern web technologies.
+        </p>
+        <a href="Pankaj_Resume.pdf.pdf" class="btn-secondary" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <span class="skill">Microsoft Azure</span>
+        <span class="skill">Cloud Infrastructure</span>
+        <span class="skill">Networking</span>
+        <span class="skill">System Administration</span>
+        <span class="skill">Technical Support</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Python</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Troubleshooting</span>
+        <span class="skill">Data Analytics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>🎮 Tic Tac Toe Game</h3>
+          <p>
+            Built an interactive Tic Tac Toe web game using HTML, CSS, and JavaScript to strengthen logic and DOM manipulation skills.
+            Implemented real-time win detection and a fully responsive UI.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>✊🖐✌ Stone-Paper-Scissors Game</h3>
+          <p>
+            Developed a fun and interactive web game using JavaScript logic and CSS animations.
+            Enhanced skills in event handling, DOM manipulation, and UI design.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>💱 Currency Converter Web App</h3>
+          <p>
+            Created a live currency converter web app using REST API integration.
+            Built responsive layout and input validation using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>📱 Play Store App Review Analysis</h3>
+          <p>
+            Conducted data analysis on app reviews using Python, Pandas, and visualization libraries.
+            Derived insights and user sentiment patterns through data cleaning and EDA.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME SECTION ===== -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <p>Download my latest resume below:</p>
+      <a href="Pankaj_Resume.pdf.pdf" class="btn-primary" download>📄 Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Let’s connect and collaborate on new opportunities.</p>
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:kumarpankaj5127@outlook.com">kumarpankaj5127@outlook.com</a></p>
+        <p><strong>Phone:</strong> +91 9169989854</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pankaj-kumar-c3t" target="_blank">linkedin.com/in/pankaj-kumar-c3t</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Pankajkumar5127" target="_blank">github.com/Pankajkumar5127</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© <span id="year"></span> Pankaj Kumar | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
